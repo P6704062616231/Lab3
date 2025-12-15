@@ -2,7 +2,10 @@
 int main(){
 	int score;
 	scanf("%d",&score);
-	if (score < 68){
+	if(score > 100 || score < 0){
+		printf("error score");
+	}
+	else if (score < 68){
 		if(score >= 55 ){
 			printf("D\n");
 		}else {
@@ -18,7 +21,7 @@ int main(){
 			printf("You need Point: %d",75-score);
 		}
 	}
-	
+		
 
 return 0;
 }
